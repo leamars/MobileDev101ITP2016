@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Random ColorVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RandomColorVC" customModule="RandomColorsStarter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Container">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vni-fv-LX7" userLabel="Top">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
+                                <color key="backgroundColor" red="0.068878941237926483" green="0.847278892993927" blue="0.1118333712220192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="7Ur-jE-VFK"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7Ur-jE-VFK"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CqB-a6-jhn" userLabel="Middle">
+                                <rect key="frame" x="0.0" y="180" width="600" height="180"/>
+                                <color key="backgroundColor" red="0.92200946807861328" green="0.95660156011581421" blue="0.032491818070411682" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="OxK-gE-Rxa"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OxK-gE-Rxa"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nHc-q6-Mws" appends="YES" id="rDk-m0-S0K"/>
+                                    <outletCollection property="gestureRecognizers" destination="tpm-Bn-g44" appends="YES" id="cqG-vt-bjP"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aqy-4W-cB6" userLabel="Bottom">
+                                <rect key="frame" x="0.0" y="360" width="600" height="180"/>
+                                <color key="backgroundColor" red="1" green="0.82329687679999997" blue="0.036487606630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="md3-P2-fTA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="md3-P2-fTA"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="JJg-C9-dOu" appends="YES" id="YmM-4W-iNi"/>
+                                    <outletCollection property="gestureRecognizers" destination="wLt-Fj-dIb" appends="YES" id="BeX-yv-Goh"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rJ-c5-h0v">
+                                <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
+                                <state key="normal" title="jazz it up 🎷">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vni-fv-LX7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="3Un-Tq-CDS"/>
+                            <constraint firstItem="3rJ-c5-h0v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44S-F4-M4x"/>
+                            <constraint firstItem="Aqy-4W-cB6" firstAttribute="top" secondItem="CqB-a6-jhn" secondAttribute="bottom" id="4J3-rj-eRo"/>
+                            <constraint firstItem="Aqy-4W-cB6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="7FT-iC-oWI"/>
+                            <constraint firstItem="vni-fv-LX7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="BJ9-4O-nEi"/>
+                            <constraint firstItem="3rJ-c5-h0v" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="CaP-Rh-awb"/>
+                            <constraint firstItem="CqB-a6-jhn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D5q-ps-JMv"/>
+                            <constraint firstItem="CqB-a6-jhn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="FDU-t2-mEs"/>
+                            <constraint firstItem="CqB-a6-jhn" firstAttribute="top" secondItem="vni-fv-LX7" secondAttribute="bottom" id="JDO-l9-SG6"/>
+                            <constraint firstItem="Aqy-4W-cB6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Qzm-cW-g7Q"/>
+                            <constraint firstItem="vni-fv-LX7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WBz-wm-2Gp"/>
+                            <constraint firstItem="Aqy-4W-cB6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YOQ-dz-7f9"/>
+                            <constraint firstItem="vni-fv-LX7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="iI9-4p-XvP"/>
+                            <constraint firstItem="3rJ-c5-h0v" firstAttribute="top" secondItem="Aqy-4W-cB6" secondAttribute="bottom" id="ihC-wc-Vw3"/>
+                            <constraint firstItem="CqB-a6-jhn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="jLy-1Z-aN5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3rJ-c5-h0v" secondAttribute="bottom" constant="20" id="mzm-MA-2iO"/>
+                            <constraint firstItem="3rJ-c5-h0v" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="nXq-L5-NKH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mzm-MA-2iO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="Aqy-4W-cB6" id="ViL-j3-F2q"/>
+                        <outlet property="middleView" destination="CqB-a6-jhn" id="70G-Td-H6w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="nHc-q6-Mws" userLabel="MiddleRight">
+                    <connections>
+                        <action selector="middleRightSwipe:" destination="BYZ-38-t0r" id="bO8-fY-nxP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="tpm-Bn-g44" userLabel="MiddleLeft">
+                    <connections>
+                        <action selector="middleLeftSwipe:" destination="BYZ-38-t0r" id="AaV-kv-fuc"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="JJg-C9-dOu" userLabel="BottomRight">
+                    <connections>
+                        <action selector="bottomRightSwipe:" destination="BYZ-38-t0r" id="3Cv-nN-OZ3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="wLt-Fj-dIb" userLabel="BottomLeft">
+                    <connections>
+                        <action selector="bottomLeftSwipe:" destination="BYZ-38-t0r" id="KJJ-d3-rdp"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="355"/>
+        </scene>
+    </scenes>
+</document>
