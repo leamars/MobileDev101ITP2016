@@ -60,10 +60,10 @@
                                     <constraint firstAttribute="height" constant="128" id="K7f-i7-8Oz"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ITPLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ciy-2t-MVN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ITPLogo" translatesAutoresizingMaskIntoConstraints="NO" id="ciy-2t-MVN">
                                 <rect key="frame" x="216.5" y="237.5" width="167" height="125"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrP-W8-7e5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrP-W8-7e5">
                                 <rect key="frame" x="248" y="423.5" width="104" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="To Yellow">

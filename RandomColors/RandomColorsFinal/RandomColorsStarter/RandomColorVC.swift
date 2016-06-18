@@ -89,7 +89,12 @@ class RandomColorVC: UIViewController {
     @IBAction func topRightSwipe(sender: AnyObject) {
         // manipulating the blue component of the top view's RGB
         
-        topB += 0.2
+        if (topB < 1) {
+            topB += 0.2
+        } else {
+            showAlert(true)
+        }
+        
         UIView.animateWithDuration(0.2) {
             self.topView.backgroundColor = UIColor(red: self.topR, green: self.topG, blue: self.topB, alpha: 1.0)
         }
@@ -97,8 +102,13 @@ class RandomColorVC: UIViewController {
     
     @IBAction func topLeftSwipe(sender: AnyObject) {
         // manipulating the blue component of the top view's RGB
+    
+        if (topB > 0) {
+            topB -= 0.2
+        } else {
+            showAlert(false)
+        }
         
-        topB -= 0.2
         UIView.animateWithDuration(0.2) {
             self.topView.backgroundColor = UIColor(red: self.topR, green: self.topG, blue: self.topB, alpha: 1.0)
         }
@@ -107,7 +117,11 @@ class RandomColorVC: UIViewController {
     @IBAction func middleRightSwipe(sender: AnyObject) {
         // manipulating the blue component of the top view's RGB
         
-        middleG += 0.2
+        if (middleG < 1) {
+            middleG += 0.2
+        } else {
+            showAlert(true)
+        }
         
         UIView.animateWithDuration(0.2) {
             self.middleView.backgroundColor = UIColor(red: self.middleR, green: self.middleG, blue: self.middleB, alpha: 1.0)
@@ -117,7 +131,12 @@ class RandomColorVC: UIViewController {
     @IBAction func middleLeftSwipe(sender: AnyObject) {
         // manipulating the blue component of the top view's RGB
         
-        middleG -= 0.2
+        if (middleG > 0) {
+            middleG -= 0.2
+        } else {
+            showAlert(false)
+        }
+        
         UIView.animateWithDuration(0.2) {
             self.middleView.backgroundColor = UIColor(red: self.middleR, green: self.middleG, blue: self.middleB, alpha: 1.0)
         }
@@ -126,7 +145,12 @@ class RandomColorVC: UIViewController {
     @IBAction func bottomRightSwipe(sender: AnyObject) {
         // manipulating the blue component of the top view's RGB
         
-        bottomR += 0.2
+        if (bottomR < 1) {
+            bottomR += 0.2
+        } else {
+            showAlert(true)
+        }
+        
         UIView.animateWithDuration(0.2) {
             self.bottomView.backgroundColor = UIColor(red: self.bottomR, green: self.bottomG, blue: self.bottomB, alpha: 1.0)
         }
@@ -135,12 +159,22 @@ class RandomColorVC: UIViewController {
     @IBAction func bottomLeftSwipe(sender: AnyObject) {
         // manipulating the blue component of the top view's RGB
         
-        bottomB -= 0.2
+        if (bottomR > 0) {
+            bottomR -= 0.2
+        } else {
+            showAlert(false)
+        }
+        
         UIView.animateWithDuration(0.2) {
             self.bottomView.backgroundColor = UIColor(red: self.bottomR, green: self.bottomG, blue: self.bottomB, alpha: 1.0)
         }
     }
     
-    
+    func showAlert(up: Bool) {
+        let direction: String = up ? "up" : "down"
+        
+        let alertView = UIAlertView(title: "Whoops!", message: "We went to far \(direction) :(", delegate: nil, cancelButtonTitle: "OKAY")
+        alertView.show()
+    }
 }
 
