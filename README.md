@@ -19,7 +19,7 @@ Alternatively, refer to this readme for a slightly more boring presentation.
 ## HELLO, WORLD
 * The first app we'll be making is a simple Hello, World app
 
-![awesome cat gif](Assets/helloITPVideo.gif)
+->![Hello ITP gif](Assets/helloITPVideo.gif)<-
 
 
 
