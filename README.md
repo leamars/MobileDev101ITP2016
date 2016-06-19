@@ -3,8 +3,6 @@
 All supplementary workshop materials and links can be found here: [Presentation Slides](https://docs.google.com/presentation/d/1opGp7YcJ4mtu2ecTsYQ7ZrauK6zdvg9qrXpKJdV2WZ0/edit?usp=sharing
 )
 
-Alternatively, refer to this readme for a slightly more boring presentation.
-
 ## PREREQUISITES
 * Have a computer running OSX/macOS 
 * Have Xcode (between 7.1 - 7.3)
