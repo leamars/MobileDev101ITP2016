@@ -23,12 +23,12 @@ All supplementary workshop materials and links can be found here: [Presentation 
 * We'll learn about how easy it is to create an app with basic navigation
 * Open the Starter project and build up until it looks like the Final
 
-![Hello ITP gif](Assets/NavVideo.gif)
+![Navigation gif](Assets/NavVideo.gif)
 
 ## RANDOM COLORS
 * We'll learn about how easy it is to add some touch gestures (swipes) and iPhone sensors (shaking)
 * Open the Starter project and build up until it looks like the Final
 
-![Hello ITP gif](Assets/randomColors.gif)
+![Random Colors gif](Assets/randomColors.gif)
 
 
