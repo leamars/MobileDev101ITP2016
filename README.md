@@ -19,7 +19,18 @@ Alternatively, refer to this readme for a slightly more boring presentation.
 ## HELLO, WORLD
 * The first app we'll be making is a simple Hello, World app
 
-->![Hello ITP gif](Assets/helloITPVideo.gif)<-
+![Hello ITP gif](Assets/helloITPVideo.gif)
 
+## NAVIGATION
+* We'll learn about how easy it is to create an app with basic navigation
+* Open the Starter project and build up until it looks like the Final
+
+![Hello ITP gif](Assets/NavVideo.gif)
+
+## RANDOM COLORS
+* We'll learn about how easy it is to add some touch gestures (swipes) and iPhone sensors (shaking)
+* Open the Starter project and build up until it looks like the Final
+
+![Hello ITP gif](Assets/randomColors.gif)
 
 
